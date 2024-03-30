@@ -53,13 +53,25 @@ html,body{height: 100%;}
 .tit-box p span {color: #ffd55b;}
 	
 /* content 01 */
-.sec01 .logo { position: absolute; top: 50px; right: 20px; z-index: 1; width: 195px; height: 37px;}
+.sec01 .logo { position: absolute; top: 50px; right: -346px; z-index: 1; width: 195px; height: 37px;}
 .sec01{height: 100vh;}
 .sec01 .cover{object-position: 69% 50%; display: block;}
 .sec01 .title {padding-top: 98px;}
 .sec01 .title img {display: block; width: 678px;}
-.sec01 .title .sub-txt {display: inline-block; padding: 16px 2px; margin-bottom: 24px; font-size: 22px; position: relative; opacity: 0.8; transition: 1s ease, color 1s ease 1s; color: transparent; border: 2px solid #fff; border-width: 2px 0; transform: scaleX(0);}
-.sec01 .title .sub-txt.aos-animate {color: #fff; transform: scaleX(1);}
+.sec01 .title .sub-txt {display: inline-block; width: 234px; padding: 16px 2px; margin-bottom: 24px; font-size: 22px; position: relative; opacity: 0.8; transition: 1s ease, color 1s ease 1s; color: transparent; border: 2px solid #fff; border-width: 2px 0; transform: scaleX(0);}
+.sec01 .title .sub-txt img {width: 100%; opacity: 0; transition: opacity 1s 1s ease;}
+.sec01 .title .sub-txt.aos-animate {transform: scaleX(1);}
+.sec01 .title .sub-txt.aos-animate img {opacity: 1;}
+
+.sec01 .title .title-cont {position: relative; width: 677px; height: 150px; background: url(../images/sec-tit-01.png) no-repeat top center;}
+.sec01 .title .title-cont > div {position: absolute; bottom: 0; left: 134px;}
+.sec01 .title .title-cont span {display: block; width: 66px; height: 69px; float: left; margin-left: 4px;}
+.sec01 .title .title-cont span.t1 {background: url(../images/sec-tit-01-item.png) no-repeat 0 0;}
+.sec01 .title .title-cont span.t2 {background: url(../images/sec-tit-01-item.png) no-repeat -71px 0; margin-left: 6px;}
+.sec01 .title .title-cont span.t3 {background: url(../images/sec-tit-01-item.png) no-repeat -144px 0;}
+.sec01 .title .title-cont span.t4 {background: url(../images/sec-tit-01-item.png) no-repeat -212px 0;}
+.sec01 .title .title-cont span.t5 {background: url(../images/sec-tit-01-item.png) no-repeat -283px 0;}
+
 .sec01 .text {margin-top: 40px; font-size: 24px; color: #fff;}
 .sec01 .text span{font-weight: 900; color: #fff;}
 
@@ -72,6 +84,24 @@ html,body{height: 100%;}
 .sec02 .sec02-cont > div img{width: 1044px;}
 .sec02 .sec02-cont > div.sec02-cont-01 {left: 50%; transform: translateX(-98%);}
 .sec02 .sec02-cont > div.sec02-cont-02 {right: 50%; transform: translateX(98%);}
+
+.sec02 .sec02-cont > div ul {position: absolute; width: 315px; height: 279px;}
+.sec02 .sec02-cont > div ul.cont-item01 {top: 179px; right: 285px;}
+.sec02 .sec02-cont > div ul.cont-item02 {top: 176px; left: 303px;}
+.sec02 .sec02-cont > div ul li {width: 315px;}
+
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(1) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 0; height: 59px;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(2) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 -59px; height: 56px;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(3) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 -114px; height: 56px;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(4) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 -169px; height: 55px;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(5) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 -223px; height: 55px;}
+
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(1) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 0; height: 59px;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(2) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -59px; height: 56px;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(3) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -114px; height: 56px;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(4) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -169px; height: 55px;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(5) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -223px; height: 55px;}
+
 
 /* content 03 */
 .sec03{height: 902px; background: url(../images/sec-03-bg.png) no-repeat center;}
@@ -103,11 +133,13 @@ html,body{height: 100%;}
 
 /* content 04 */
 .sec04{ background: url(../images/sec-04-bg.png) no-repeat center;}
-.sec04 .inner {padding: 104px 0 154px; width: 1125px !important;}
+.sec04 .inner {padding: 104px 0 144px; width: 1125px !important;}
 .sec04 .inner .title {height: 94px; background: url(../images/sec04-tit.png) no-repeat top center;}
 .sec04 .inner .sub-titie {margin-top: 40px; font-size: 24px; font-weight: 900; color: #fff; text-align: center; line-height: 46px;}
 .sec04 .inner .sub-titie span {font-size: 24px; font-weight: 900; color: #fff; transition: color 0.3s 0.6s ease-out;}
 .sec04 .inner .sub-titie.aos-animate span {color: #ffd55b;}
+
+.sec04 .inner .bottom-txt {margin-top: 16px; text-align: right; color: #fff; opacity: 0.4;}
 
 .sec04 .swiper {
     overflow: visible !important;
@@ -145,16 +177,17 @@ html,body{height: 100%;}
 .sec04 .swiper-slide.swiper-slide-active .slide-cont-item03 {background: url(../images/sec04-cont02-item01.png) no-repeat top center;}
 .sec04 .swiper-slide.swiper-slide-active .slide-cont-item04 {background: url(../images/sec04-cont02-item02.png) no-repeat top center;}
 
-.sec04 .swiper-slide .slide-cont > li > div {display: flex; margin-top: 192px;}
+.sec04 .swiper-slide .slide-cont > li > div {display: flex; margin-top: 186px;}
 .sec04 .swiper-slide .slide-cont > li > div > .item {width: 50%; text-align: center;}
 .sec04 .swiper-slide .slide-cont > li > div > .item p, .slide-cont > li > div > .item  strong {font-size: 20px; font-weight: 900; color: #000;}
-.sec04 .swiper-slide .slide-cont > li > div > .item  strong {display: block; margin-top: 30px; color: #4dacd4;}
+
+.sec04 .swiper-slide .slide-cont > li > div > .item  strong {display: block; margin-top: 36px; color: #4dacd4;}
 .sec04 .swiper-slide .slide-cont > li.slide-cont-item02 > div > .item strong {color: #df9240;}
 .sec04 .swiper-slide .slide-cont > li.slide-cont-item04 > div > .item strong {color: #69a69d;}
 .swiper-slide-prev {opacity: 0 !important;}
 .swiper-slide-next {visibility: hidden;}
 .sec04 .swiper-slide .slide-text-box {position: relative; z-index: -2; width: 837px; height: 90px; background: url(../images/sec04-text-box.png) no-repeat top left; margin: 74px auto 0;}
-.sec04 .swiper-slide .slide-text-box p {text-align: center; font-size: 24px; color: #000; font-weight: 900; margin-top: 34px;}
+.sec04 .swiper-slide .slide-text-box p {text-align: center; font-size: 24px; color: #000; font-weight: 900; margin-top: 34px; letter-spacing: -0.025em;}
 .sec04 .swiper-slide .slide-text-box p span{position: relative; font-size: 24px; color: #000; font-weight: 900;}
 .sec04 .swiper-slide .slide-text-box p span::after {content: ''; display: block; position: absolute; z-index: -1; top: 17px; left: 50%; width: 100%; height: 12px; background-color: #ffd55b; transform: skew(-26deg) translateX(-50%) scaleX(0); transition: transform 0.7s 0.5s ease-in;}
 .sec04 .swiper-slide.swiper-slide-active .slide-text-box p span::after {transform: skew(-26deg) translateX(-50%) scaleX(1);}
