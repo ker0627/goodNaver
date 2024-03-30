@@ -104,7 +104,7 @@ html,body{height: 100%;}
 
 
 /* content 03 */
-.sec03{height: 902px; background: url(../images/sec-03-bg.png) no-repeat center;}
+.sec03{height: 900px; background: url(../images/sec-03-bg.png) no-repeat bottom center;}
 .sec03 .sec03-cont {display: flex; padding-top: 246px; align-items: center;}
 .sec03 .sec03-cont > div {width: 50%;}
 .sec03 .sec03-cont .txt-box img {width: 470px;}
@@ -132,8 +132,8 @@ html,body{height: 100%;}
 .sec03 .sec03-cont .cont-box ul li:nth-child(2).aos-animate .graph div {height: 30px; opacity: 1;}
 
 /* content 04 */
-.sec04{ background: url(../images/sec-04-bg.png) no-repeat center;}
-.sec04 .inner {padding: 104px 0 144px; width: 1125px !important;}
+.sec04{ background: url(../images/sec-04-bg.png) no-repeat bottom center;}
+.sec04 .inner {padding: 104px 0 142px; width: 1125px !important;}
 .sec04 .inner .title {height: 94px; background: url(../images/sec04-tit.png) no-repeat top center;}
 .sec04 .inner .sub-titie {margin-top: 40px; font-size: 24px; font-weight: 900; color: #fff; text-align: center; line-height: 46px;}
 .sec04 .inner .sub-titie span {font-size: 24px; font-weight: 900; color: #fff; transition: color 0.3s 0.6s ease-out;}
@@ -201,8 +201,8 @@ html,body{height: 100%;}
 .button-next {right: -90px; background: url(../images/sec04-r-btn.png) no-repeat center;}
 
 /* content 05 */
-.sec05{background: url(../images/sec-05-bg.png) no-repeat center;}
-.sec05 .inner {padding-top: 124px; height: 1636px;}
+.sec05{background: url(../images/sec-05-bg.png) no-repeat bottom center;}
+.sec05 .inner {padding-top: 124px; height: 1634px;}
 .sec05 .tit-box img {width: 776px;}
 .sec05 .tit-box p {margin-top: 46px;}
 
