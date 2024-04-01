@@ -6,7 +6,6 @@
 @font-face {font-family: 'Pretendard'; font-style: normal; font-weight: 400; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');}
 
 html,body{height: 100%;}
-html,body{height: 100%;}
 .wrap img{width: auto;display: inline-block;}
 .wrap div,.wrap span,.wrap a,.wrap p,.wrap label,.wrap table th,.wrap table td{font-family: 'NanumSquare Neo',sans-serif;font-weight: 400;letter-spacing: -0.05px;}
 
@@ -28,7 +27,7 @@ html,body{height: 100%;}
 *[data-font="Gmarket"] *,
 .wrap .inner .chk .txtbox *{font-family: 'GmarketSans', sans-serif !important;}
 
-.wrap{width:100%; max-width: 720px; margin: auto;position: relative;}
+.wrap{width:100%; max-width: 720px; margin: auto;position: relative; overflow: hidden;}
 
 .wrap [data-aos=fade-up]{transform: translate3d(0,30px,0);}
 .wrap [data-aos=fade-down]{transform: translate3d(0,-30px,0)}
