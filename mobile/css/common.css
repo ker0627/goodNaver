@@ -54,7 +54,7 @@ html,body{height: 100%;}
 	
 /* content 01 */
 .sec01 .logo { position: absolute; top: 30px; right: -28px; z-index: 1; width: 195px; height: 37px;}
-.sec01{height: 100vh;}
+.sec01{height: 990px; background: url(../images/sec-01-bg.png) no-repeat top center; background-size: cover;}
 .sec01 .inner {margin: 0 50px !important;}
 .sec01 .cover{object-position: 69% 50%; display: block; width: 720px;}
 .sec01 .title {padding-top: 98px;}
