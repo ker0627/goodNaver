@@ -89,7 +89,21 @@ html,body{height: 100%;}
 .sec02 .sec02-cont > div ul {position: absolute; width: 315px; height: 279px;}
 .sec02 .sec02-cont > div ul.cont-item01 {top: 52px; right: 16px;}
 .sec02 .sec02-cont > div ul.cont-item02 {top: 52px; left: 12px;}
-.sec02 .sec02-cont > div ul li {width: 315px;}
+.sec02 .sec02-cont > div ul li {width: 315px; opacity: 0;}
+
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(1) {transition: opacity 0.3s ease;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(2) {transition: opacity 0.3s 0.2s ease;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(3) {transition: opacity 0.3s 0.4s ease;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(4) {transition: opacity 0.3s 0.6s ease;}
+.sec02 .sec02-cont > div ul.cont-item01 li:nth-child(5) {transition: opacity 0.3s 0.8s ease;}
+
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(1) {transition: opacity 0.3s ease;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(2) {transition: opacity 0.3s 0.2s ease;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(3) {transition: opacity 0.3s 0.4s ease;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(4) {transition: opacity 0.3s 0.6s ease;}
+.sec02 .sec02-cont > div ul.cont-item02 li:nth-child(5) {transition: opacity 0.3s 0.8s ease;}
+
+.sec02 .sec02-cont > div ul.aos-animate li {opacity: 1;}
 
 .sec02 .sec02-cont > div ul.cont-item01 li:nth-child(1) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 0; height: 59px;}
 .sec02 .sec02-cont > div ul.cont-item01 li:nth-child(2) {background: url(../images/sec-02-cont-itme01.png) no-repeat 0 -59px; height: 56px;}
@@ -102,6 +116,7 @@ html,body{height: 100%;}
 .sec02 .sec02-cont > div ul.cont-item02 li:nth-child(3) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -114px; height: 56px;}
 .sec02 .sec02-cont > div ul.cont-item02 li:nth-child(4) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -169px; height: 55px;}
 .sec02 .sec02-cont > div ul.cont-item02 li:nth-child(5) {background: url(../images/sec-02-cont-itme02.png) no-repeat 0 -223px; height: 56px;}
+
 
 
 /* content 03 */
@@ -136,11 +151,11 @@ html,body{height: 100%;}
 .sec04{ background: url(../images/sec-04-bg.png) no-repeat bottom center;}
 .sec04 .inner {padding: 120px 0 104px;}
 .sec04 .inner .title {height: 150px; background: url(../images/sec04-tit.png) no-repeat top center;}
-.sec04 .inner .sub-titie {margin: 40px 0 170px; font-size: 24px; font-weight: 900; color: #fff; text-align: center; line-height: 46px;}
+.sec04 .inner .sub-titie {margin: 50px 0 200px; font-size: 24px; font-weight: 900; color: #fff; text-align: center; line-height: 46px;}
 .sec04 .inner .sub-titie span {font-size: 24px; font-weight: 900; color: #fff; transition: color 0.3s 0.6s ease-out;}
 .sec04 .inner .sub-titie.aos-animate span {color: #ffd55b;}
 
-.sec04 .inner .bottom-txt {margin-top: 16px; text-align: right; color: #fff; opacity: 0.4;}
+.sec04 .inner .bottom-txt {margin-top: 16px; text-align: center; color: #fff; opacity: 0.4; font-size: 18px;}
 
 .sec04 .swiper {
     overflow: visible !important;
@@ -195,7 +210,7 @@ html,body{height: 100%;}
 .sec04 .swiper-slide.swiper-slide-active .slide-text-box p span::after {transform: skew(-26deg); width: 100%;}
 .sec04 .swiper-slide.aos-animate .slide-text-box p span::after {transform: skew(-26deg); width: 100%;}
 
-.swiper-button {position: absolute; width: 32px; height: 48px; top: 240px;  opacity: 0.6; transition: all 0.3s ease; cursor: pointer;}
+.swiper-button {position: absolute; width: 32px; height: 48px; top: 240px;  opacity: 0.6; transition: all 0.3s ease; cursor: pointer; z-index: 99;}
 .swiper-button:hover {opacity: 1;}
 .button-prev {left: -50px; background: url(../images/sec04-l-btn.png) no-repeat center;}
 .button-next {right: -50px; background: url(../images/sec04-r-btn.png) no-repeat center;}
@@ -299,8 +314,17 @@ left: 50%; transform: translateX(-50%); width: 82px; height: 128px; background: 
 .sec08 .inner .perstxt p.T6{font-weight: 900; text-align: center; color:#000;font-size: 30px; margin-bottom: 40px;}
 .sec08 .inner .perstxt p.T7{color:#000; font-size: 26px; font-weight: 700; margin-bottom: 40px; line-height: 33px;}
 .sec08 .inner .perstxt p.T7 span{font-weight: 900; color:#000;}
-.sec08 .inner .perstxt .inbox label{color:#000; font-size: 26px; font-weight: 700;}
-.sec08 .inner .perstxt .inbox input{width: 20px; height: 20px; margin-top:4px; vertical-align: top; border: 2px solid #000;}
+/* .sec08 .inner .perstxt .inbox label{color:#000; font-size: 26px; font-weight: 700;}
+.sec08 .inner .perstxt .inbox input{width: 20px; height: 20px; margin-top:4px; vertical-align: top; border: 2px solid #000;} */
+.sec08 .inner .perstxt .inbox{margin-bottom: 40px; text-align: center;}
+.sec08 .inner .perstxt .container {position: relative;padding-left: 35px;margin-bottom: 12px; cursor: pointer;font-size: 24px;-webkit-user-select: none; -moz-user-select: none;-ms-user-select: none;user-select: none;}
+.sec08 .inner .perstxt .container input {position: absolute;opacity: 0; cursor: pointer;height: 0; width: 0;}
+.sec08 .inner .perstxt .checkmark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #fff;border: 2px solid #000;border-radius: 50%;}
+.sec08 .inner .perstxt .container:hover input ~ .checkmark {background-color: #fff;border: 2px solid #000; border-radius: 50%;}
+.sec08 .inner .perstxt .container input:checked ~ .checkmark { border: 2px solid #000;border-radius: 50%;}
+.sec08 .inner .perstxt .checkmark:after {content: "";position: absolute;display: none;}
+.sec08 .inner .perstxt .container input:checked ~ .checkmark:after {display: block;}
+.sec08 .inner .perstxt .container .checkmark:after {left: 4px;top: 4px;width: 13px;height: 13px; background-color: #2196F3; border-radius: 10px;}
 .sec08 .inner .perstxt .inbox .in2 {margin: 0 35px 0 0; vertical-align: top;}
 .sec08 .inner .perstxt .inbox .in4 {vertical-align: top;}
 .sec08 .inner .perstxt table {margin-bottom: 30px; width: 100%;}
@@ -326,7 +350,7 @@ left: 50%; transform: translateX(-50%); width: 82px; height: 128px; background: 
 
 /* content 09 */
 .sec09 {background: url(../images/sec-09-bg.png) no-repeat top center;}
-.sec09 .inner {padding: 88px 0 83px;}
+.sec09 .inner {padding: 86px 0 80px;}
 .sec09 .inner .title {font-size: 40px; line-height: 62px; color: #000; text-align: center; letter-spacing: -0.025em;}
 .sec09 .inner .title strong {display: inline-block; margin: 0 6px; padding: 0 14px; position: relative; font-size: 40px; color: #5cc0c9; font-weight: 900;  letter-spacing: -0.025em;}
 .sec09 .inner .title strong::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 65px; background-color: #fff; z-index: -1;transform: scaleX(0); transition: transform 1s 0.6s ease-in;}
