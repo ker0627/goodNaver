@@ -158,6 +158,7 @@ html,body{height: 100%;}
     flex-direction: column;
 }
 
+
 .sec04 .swiper-slide .slide-cont {padding: 66px 62px 0; width: 100%; height: 396px; display: flex;}
 .sec04 .swiper-slide .slide-cont > li {width: 472px;}
 .sec04 .swiper-slide .slide-cont > li:nth-child(2) {margin-left: 56px;}
