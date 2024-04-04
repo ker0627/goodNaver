@@ -121,6 +121,7 @@ html,body{height: 100%;}
 
 /* content 03 */
 .sec03{height: 1010px; background: #000 url(../images/sec-03-1-bg.png) no-repeat bottom center; background-size: cover;}
+.sec03::after {content: ""; display: block; width: 100%; height: 1px; background-color: #000; position: absolute; top: 0;}
 .sec03 .inner {margin: 0 50px !important;}
 .sec03 .sec03-cont {padding-top: 158px;}
 .sec03 .sec03-cont .txt-box img {width: 470px;}
