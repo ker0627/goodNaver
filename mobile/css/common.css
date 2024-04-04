@@ -78,7 +78,7 @@ html,body{height: 100%;}
 
 
 /* content 02 */
-.sec02{height: 1062px; background-color: #000; padding: 106px 0 120px; overflow: hidden;}
+.sec02{height: 1058px; background-color: #000; padding: 106px 0 120px; overflow: hidden;}
 .sec02 .title{margin-bottom: 60px; font-size: 40px; text-align: center; color: #fff; }
 .sec02 .sec02-cont {position: relative; margin: 0 50px; }
 .sec02 .sec02-cont > div {position: relative;}
@@ -120,7 +120,7 @@ html,body{height: 100%;}
 
 
 /* content 03 */
-.sec03{height: 1021px; background: url(../images/sec-03-bg.png) no-repeat bottom center;}
+.sec03{height: 1012px; background: url(../images/sec-03-bg.png) no-repeat top center;}
 .sec03 .inner {margin: 0 50px !important;}
 .sec03 .sec03-cont {padding-top: 158px;}
 .sec03 .sec03-cont .txt-box img {width: 470px;}
@@ -149,7 +149,7 @@ html,body{height: 100%;}
 
 /* content 04 */
 .sec04{ background: url(../images/sec-04-bg.png) no-repeat bottom center;}
-.sec04 .inner {padding: 120px 0 104px;}
+.sec04 .inner {padding: 116px 0 104px;}
 .sec04 .inner .title {height: 150px; background: url(../images/sec04-tit.png) no-repeat top center;}
 .sec04 .inner .sub-titie {margin: 50px 0 200px; font-size: 24px; font-weight: 900; color: #fff; text-align: center; line-height: 46px;}
 .sec04 .inner .sub-titie span {font-size: 24px; font-weight: 900; color: #fff; transition: color 0.3s 0.6s ease-out;}
