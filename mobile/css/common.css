@@ -54,7 +54,7 @@ html,body{height: 100%;}
 	
 /* content 01 */
 .sec01 .logo { position: absolute; top: 30px; right: -28px; z-index: 1; width: 195px; height: 37px;}
-.sec01{height: 990px; background: url(../images/sec-01-bg.png) no-repeat top center; background-size: cover;}
+.sec01{height: 990px; background: #000 url(../images/sec-01-bg.png) no-repeat top center; background-size: cover;}
 .sec01 .inner {margin: 0 50px !important;}
 .sec01 .cover{object-position: 69% 50%; display: block; width: 720px;}
 .sec01 .title {padding-top: 98px;}
@@ -120,7 +120,7 @@ html,body{height: 100%;}
 
 
 /* content 03 */
-.sec03{height: 1012px; background: url(../images/sec-03-bg.png) no-repeat top center; background-size: cover;}
+.sec03{height: 1012px; background: #000 url(../images/sec-03-bg.png) no-repeat top center; background-size: cover;}
 .sec03 .inner {margin: 0 50px !important;}
 .sec03 .sec03-cont {padding-top: 158px;}
 .sec03 .sec03-cont .txt-box img {width: 470px;}
@@ -148,7 +148,7 @@ html,body{height: 100%;}
 .sec03 .sec03-cont .cont-box ul li:nth-child(2).aos-animate .graph div {height: 30px; opacity: 1;}
 
 /* content 04 */
-.sec04{ background: url(../images/sec-04-bg.png) no-repeat bottom center; background-size: cover;}
+.sec04{ background: #000 url(../images/sec-04-bg.png) no-repeat bottom center; background-size: cover;}
 .sec04 .inner {padding: 116px 0 104px;}
 .sec04 .inner .title {height: 150px; background: url(../images/sec04-tit.png) no-repeat top center;}
 .sec04 .inner .sub-titie {margin: 50px 0 200px; font-size: 24px; font-weight: 900; color: #fff; text-align: center; line-height: 46px;}
@@ -216,7 +216,7 @@ html,body{height: 100%;}
 .button-next {right: -50px; background: url(../images/sec04-r-btn.png) no-repeat center;}
 
 /* content 05 */
-.sec05{background: url(../images/sec-05-bg.png) no-repeat bottom center;}
+.sec05{background: #000 url(../images/sec-05-bg.png) no-repeat bottom center;}
 .sec05 .inner {padding-top: 150px; margin: 0 50px !important; height: 2599px;}
 .sec05 .tit-box img {width: 480px;}
 .sec05 .tit-box p {margin-top: 60px;}
@@ -249,7 +249,7 @@ left: 50%; transform: translateX(-50%); width: 82px; height: 128px; background: 
 .sec05 .bottom-txt.aos-animate strong::before {transform: skew(-15deg) translateX(-50%) scaleX(1);}
 
 /* content 06 */
-.sec06{background: url(../images/sec-06-bg.png) no-repeat center;}
+.sec06{background: #000 url(../images/sec-06-bg.png) no-repeat center;}
 .sec06 .inner {height: 1057px;}
 .sec06 .inner .text, .sec06 .inner .text span {font-size: 24px; text-align: center; line-height: 40px; font-weight: 700;}
 .sec06 .inner .text span {font-weight: 900;}
@@ -266,7 +266,7 @@ left: 50%; transform: translateX(-50%); width: 82px; height: 128px; background: 
 .sec06 .inner .text-box p.line.aos-animate::after {width: 100%;}
 
 /* content 07 */
-.sec07{background: url(../images/sec-07-bg.png) no-repeat center;}
+.sec07{background: #000 url(../images/sec-07-bg.png) no-repeat center;}
 .sec07 .inner {height: 1468px; margin: 0 10px !important;}
 .sec07 .inner .title {padding-top: 134px; font-size: 40px; line-height: 66px; color: #fff; text-align: center; letter-spacing: -0.25px;}
 .sec07 .inner .title strong {display: inline-block; margin: 0 4px; padding: 0 8px; position: relative; font-size: 40px; color: #5cc0c9; font-weight: 900;  letter-spacing: -0.25px;}
