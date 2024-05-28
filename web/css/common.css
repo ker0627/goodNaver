@@ -147,7 +147,7 @@ html,body{height: 100%;}
 .sec01{ background: url(../images/sec_01_bg.png) no-repeat top center;}
 /* height: 982px; */
 /* .sec01 .cover{object-position: 69% 50%; display: block;} */
-.sec01 > .inner {padding: 100px 0 412px; position: relative; z-index: 2;}
+.sec01 > .inner {padding: 100px 0 410px; position: relative; z-index: 2;}
 .sec01 .title .top-txt {width: 230px; line-height: 50px; text-align: center; font-size: 22px; border-radius: 50px; background-color: #1693db; color: #fff; margin: 0 auto;}
 
 .sec01 .title .tit {text-align: center;}
@@ -621,7 +621,7 @@ z-index: 3;}
 .sec06 .inner .title {font-size: 40px; margin-bottom: 44px; color: #222; text-align: center; font-weight: 300;}
 
 .sec06 .inner .inputarea{padding-left: 136px; margin-bottom: 32px;}
-.sec06 .inner .inputarea span{display: inline-block;vertical-align: middle;}
+.sec06 .inner .inputarea span{display: inline-block; vertical-align: middle;}
 .sec06 .inner .inputarea span label{font-size: 22px; color:#000; font-weight: 800;}
 .sec06 .inner .inputarea span input{padding: 15px; border: 2px solid #cccccc;font-size: 22px; vertical-align: middle; border-radius: 10px;}
 .sec06 .inner .inputarea span.in2 input{width: 250px;}
@@ -633,8 +633,17 @@ z-index: 3;}
 .sec06 .inner .perstxt p.T6{font-weight: 900; text-align: center; color:#000;font-size: 27px; margin-bottom: 40px;}
 .sec06 .inner .perstxt p.T7{color:#000; font-size: 22px; font-weight: 400;}
 .sec06 .inner .perstxt p.T7 span{font-weight: 500; color:#89a230; font-weight: 600;}
-.sec06 .inner .perstxt .inbox label{color:#000; font-size: 22px;}
-.sec06 .inner .perstxt .inbox input{width: 20px; height: 20px; margin-top:4px; vertical-align: top; border: 2px solid #000;}
+.sec06 .inner .perstxt .inbox span {display: inline-block; height: 24px; vertical-align: top;}
+.sec06 .inner .perstxt .inbox label{color:#000; font-size: 22px; line-height: 24px;}
+.sec06 .inner .perstxt .inbox input[type='radio']{
+    -webkit-appearance: none; 
+    -moz-appearance: none;  
+    appearance: none; 
+    margin-top: 0;
+    width: 24px; height: 24px; vertical-align: top; background: url(../images/radio.png) no-repeat center;}
+.sec06 .inner .perstxt .inbox input[type='radio']:checked {
+    background: url(../images/radio-checked.png) no-repeat center;
+}
 .sec06 .inner .perstxt .inbox .in2 {margin: 0 35px 0 0; vertical-align: top;}
 .sec06 .inner .perstxt .inbox .in4 {vertical-align: top;}
 .sec06 .inner .perstxt table {margin-bottom: 28px; width: 100%;}
