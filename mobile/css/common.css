@@ -1,13 +1,95 @@
-@import url('https://fonts.cdnfonts.com/css/nanumsquare-neo');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @font-face {font-family: 'GmarketSans'; font-style: normal; font-weight: 300; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');}
 @font-face {font-family: 'GmarketSans'; font-style: normal; font-weight: normal; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');}
 @font-face {font-family: 'GmarketSans'; font-style: normal; font-weight: bold; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');}
-@font-face {font-family: 'Pretendard'; font-style: normal; font-weight: 400; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 이사만루 */
+@font-face {
+    font-family: 'EsaManru';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EsaManru';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EsaManru';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GangwonEduAll';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.ttf') format("truetype");
+    font-display: swap;
+} 
+
+@font-face {
+    font-family: 'SSRONETHandwritten';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SSRONETHandwritten.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.light{ font-weight: 300 }
+.midium{ font-weight: 500 }
+.sbold{ font-weight: 600 }
+.bold{ font-weight: 800 }
+.bolder{ font-weight: 900 }
 
 html,body{height: 100%;}
 .wrap img{width: auto;display: inline-block;}
-.wrap div,.wrap span,.wrap a,.wrap p,.wrap label,.wrap table th,.wrap table td{font-family: 'NanumSquare Neo',sans-serif;font-weight: 400;letter-spacing: -0.05px;}
+.wrap div,.wrap span,.wrap a,.wrap p,.wrap label,.wrap table th,.wrap table td{font-family: 'Pretendard' ,sans-serif;font-weight: 400; letter-spacing: -0.02rem;}
 
 .blind {visibility: hidden;
 	display: none;
@@ -16,16 +98,22 @@ html,body{height: 100%;}
 	font-size: 0; 
 	line-height: 0;}
 
-*[data-font="NanumSquare"],
-*[data-font="NanumSquare"] *,
-.wrap .inner .chk .txtbox *{font-family: 'NanumSquare Neo', sans-serif !important; font-weight: 400;}
-.light{ font-weight: 300 ;}
-.bold{ font-weight: 800 !important; }
-.bolder{ font-weight: 900 !important; }
 
 *[data-font="Gmarket"],
 *[data-font="Gmarket"] *,
 .wrap .inner .chk .txtbox *{font-family: 'GmarketSans', sans-serif !important;}
+    
+*[data-font="EsaManru"],
+*[data-font="EsaManru"] *,
+.wrap .inner .chk .txtbox *{font-family: 'EsaManru', sans-serif !important;}
+    
+*[data-font="GangwonEduAll"],
+*[data-font="GangwonEduAll"] *,
+    .wrap .inner .chk .txtbox *{font-family: 'GangwonEduAll', sans-serif !important;}
+    
+*[data-font="SSRONETHandwritten"],
+*[data-font="SSRONETHandwritten"] *,
+.wrap .inner .chk .txtbox *{font-family: 'SSRONETHandwritten', sans-serif !important;}
 
 .wrap{width:100%; max-width: 720px; margin: auto;position: relative; overflow: hidden;}
 
@@ -53,28 +141,103 @@ html,body{height: 100%;}
 .tit-box p span {color: #ffd55b;}
 	
 /* content 01 */
-.sec01 .logo { position: absolute; top: 30px; right: -28px; z-index: 1; width: 195px; height: 37px;}
-.sec01{height: 990px; background: #000 url(../images/sec-01-bg.png) no-repeat top center; background-size: cover;}
-.sec01 .inner {margin: 0 50px !important;}
-.sec01 .cover{object-position: 69% 50%; display: block; width: 720px;}
-.sec01 .title {padding-top: 98px;}
-.sec01 .title img {display: block; width: 678px;}
-.sec01 .title .sub-txt {display: inline-block; width: 234px; padding: 16px 2px; margin-bottom: 26px; font-size: 22px; position: relative; opacity: 0.8; transition: 1s ease, color 1s ease 1s; color: transparent; border: 2px solid #fff; border-width: 2px 0; transform: scaleX(0);}
-.sec01 .title .sub-txt img {width: 100%; opacity: 0; transition: opacity 1s 1s ease;}
-.sec01 .title .sub-txt.aos-animate {transform: scaleX(1);}
-.sec01 .title .sub-txt.aos-animate img {opacity: 1;}
+.sec01 .logo { position: absolute; top: 20px; right: 25px; z-index: 1; width: 173px; height: 33px;}
+.sec01{ background: url(../images/sec_01_bg.png) no-repeat top center;}
 
-.sec01 .title .title-cont {position: relative; width: 508px; height: 220px; background: url(../images/sec-tit-01-1.png) no-repeat top left;}
-.sec01 .title .title-cont > div {position: absolute; bottom: 76px; left: 134px;}
-.sec01 .title .title-cont span {display: block; width: 70px; height: 73px; float: left; margin-left: 4px;}
-.sec01 .title .title-cont span.t1 {background: url(../images/sec-tit-01-item-1.png) no-repeat 0 0;}
-.sec01 .title .title-cont span.t2 {background: url(../images/sec-tit-01-item-1.png) no-repeat -74px 0; margin-left: 6px;}
-.sec01 .title .title-cont span.t3 {background: url(../images/sec-tit-01-item-1.png) no-repeat -148px 0;}
-.sec01 .title .title-cont span.t4 {background: url(../images/sec-tit-01-item-1.png) no-repeat -222px 0;}
-.sec01 .title .title-cont span.t5 {background: url(../images/sec-tit-01-item-1.png) no-repeat -296px 0;}
+.sec01 > .inner {padding: 100px 0 0; height: 992px; position: relative; z-index: 2;}
+.sec01 .title .top-txt {width: 230px; line-height: 50px; text-align: center; font-size: 22px; border-radius: 50px; background-color: #1693db; color: #fff; margin: 0 auto;}
 
-.sec01 .text {margin-top: 49px; font-size: 24px; color: #fff;}
-.sec01 .text span{font-weight: 900; color: #fff;}
+.sec01 .title .tit {text-align: center;}
+.sec01 .title .tit p {font-size: 150px; line-height: 120px;}
+.sec01 .title .tit > p {color: #383433; margin: 36px 0 20px;}
+.sec01 .title .tit > div {position: relative; width: 400px; height: 123px; margin: 0 auto 26px;}
+.sec01 .title .tit > div > span, .sec01 .title .tit > div p {display: inline-block;}
+
+
+.sec01 .title .tit > div > span {position: absolute; width: 28px; height: 123px; transition: all 0.5s 0.3s ease-in;}
+.sec01 .title .tit > div > span.le {background: url(../images/sec_01_title_bullet01.png); left: 150px;}
+.sec01 .title .tit > div > span.ri {background: url(../images/sec_01_title_bullet02.png); right: 150px;}
+
+.sec01 .title .tit.aos-animate > div span.le {left: 0;}
+.sec01 .title .tit.aos-animate > div span.ri {right: 0;}
+
+.sec01 .title .tit > div p {position: absolute; left: 47px; width: 0; height: 123px; transition: width 0.8s 0.9s ease; overflow: hidden; background: url(../images/sec_01_title.png) no-repeat center left;}
+
+.sec01 .title .tit.aos-animate > div p {width: 302px;}
+
+
+
+.sec01 .text {margin-top: 10px; text-align: center;}
+.sec01 .text, .sec01 .text span {font-size: 24px; line-height: 36px; color: #383433; font-weight: 500;}
+.sec01 .text span {position: relative; -webkit-text-fill-color: #1693db; font-weight: 600;}
+.sec01 .text span::after {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 100%;
+    transform-origin: 0 100%;
+    content: attr(data-text);
+    -webkit-text-fill-color: #383433;
+    overflow: hidden;
+    transition: all 0.6s 1.5s ease-in;
+}
+
+.sec01 .text.aos-animate span::after {
+    height: 0;
+}
+
+.sec01 .img-item {width: 226px; height: 344px; background: url(../images/sec_01_item.png) no-repeat top center; position: absolute; top: 604px; left: 70px;}
+.sec01 .img-item.aos-animate {animation: sec01-img 2s 2s ease infinite alternate;}
+
+@keyframes sec01-img{
+   0% {opacity: 1;}
+   50% {opacity: 1;}
+   75% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.sec01 .sec01_motion {
+    background: url(../images/sec_01_01_bg.png) no-repeat top center;
+    height: 778px;
+    position: relative;
+    z-index: 3;
+}
+
+.sec01 .sec01_motion .title {padding-top: 88px; width: 660px; margin: 0 auto;}
+.sec01 .sec01_motion .title p {font-size: 40px; color: #fff; margin-bottom: 18px; font-weight: 300; text-align: center;}
+.sec01 .sec01_motion .title .tit-ani {}
+.sec01 .sec01_motion .title .tit-ani span {text-indent: -9999px; display: inline-block; height: 36px;}
+.sec01 .sec01_motion .title .tit-ani span:nth-child(1) {background: url(../images/sec_01_01_title01.png) no-repeat; }
+.sec01 .sec01_motion .title .tit-ani span:nth-child(2) {background: url(../images/sec_01_01_title02.png) no-repeat top right; width: 195px;}
+.sec01 .sec01_motion .title.aos-animate .tit-ani span.ani-txt {animation: wi1 1.4s ease both;}
+
+@keyframes wi1{
+    0% {width: 0px}
+    100% {width: 460px;}
+ }
+
+.sec01 .sec01_motion_cont {display: flex; width: 660px; margin: 78px auto 0; justify-content: space-between;}
+.sec01 .sec01_motion_cont > div > .img {width: 309px; height: 309px; border-radius: 58px;  box-shadow: 10px 0 30px rgba(0,0,0,0.4); position: relative; top: -20px; opacity: 0;}
+.sec01 .sec01_motion_cont > div:nth-child(1) > .img {background: url(../images/sec01_motion_img01.png) no-repeat top center; transition: all 0.3s 0.2s ease-in;} 
+.sec01 .sec01_motion_cont > div:nth-child(2) > .img {background: url(../images/sec01_motion_img02.png) no-repeat top center; transition: all 0.3s 0.6s ease-in;} 
+
+.sec01 .sec01_motion_cont > div > p {font-size: 24px; font-weight: 500; line-height: 36px; color: #fff; margin-top: 24px; text-align: center; position: relative; bottom: -20px; opacity: 0; letter-spacing: -0.05rem;}
+.sec01 .sec01_motion_cont > div:nth-child(1) > p {transition: all 0.3s 0.4s ease-in;}
+.sec01 .sec01_motion_cont > div:nth-child(2) > p {transition: all 0.3s 0.8s ease-in;}
+
+.sec01 .sec01_motion_cont.aos-animate > div > .img {top: 0; opacity: 1;}
+.sec01 .sec01_motion_cont.aos-animate > div > p {bottom: 0; opacity: 1;}
+
+.sec01 .sec01_motion_cont > div span {display: block; width: 0; height: 6px; background: url(../images/sec01_motion_img03.png) no-repeat top left;}
+.sec01 .sec01_motion_cont > div:nth-child(1) span {margin-left: 10px;}
+.sec01 .sec01_motion_cont > div:nth-child(2) span {margin-left: 2px;}
+
+.sec01 .sec01_motion_cont.aos-animate > div span {animation: wi2 1s 1.2s ease both;}
+
+@keyframes wi2{
+    0% {width: 0px}
+    100% {width: 300px;}
+ }
 
 
 /* content 02 */
