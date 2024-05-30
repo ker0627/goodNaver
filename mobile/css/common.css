@@ -325,7 +325,7 @@ html,body{height: 100%;}
 .sec01 .sec01_motion_cont.aos-animate > div > p {bottom: 0; opacity: 1;}
 
 .sec01 .sec01_motion_cont > div span {display: block; width: 0; height: 6px; background: url(../images/sec01_motion_img03.png) no-repeat top left;}
-.sec01 .sec01_motion_cont > div:nth-child(1) span {margin-left: 10px;}
+.sec01 .sec01_motion_cont > div:nth-child(1) span {margin-left: 8px;}
 .sec01 .sec01_motion_cont > div:nth-child(2) span {margin-left: 2px;}
 
 .sec01 .sec01_motion_cont.aos-animate > div span {animation: wi2 1s 1.2s ease both;}
