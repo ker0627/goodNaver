@@ -355,7 +355,7 @@ html,body{height: 100%;}
 .sec02 .title .tit-ani span:nth-child(2) {background: url(../images/sec_02_title02.png) no-repeat top right; width: 200px;}
 .sec02 .title.aos-animate .tit-ani span.ani-txt {animation: wi3 1.4s ease both;}
 
-/* 애니  */
+
 @keyframes wi3{
     0% {width: 0px}
     100% {width: 440px;}
@@ -384,9 +384,10 @@ html,body{height: 100%;}
     transition: height 0.3s 0.3s ease-in;
 }
 
+/* 애니
 .sec02-cont02 .text.aos-animate span {
     height: 0;
-}
+} */
 
 .sec02-cont02 .sec02-cont02_item {
     width: 648px;
