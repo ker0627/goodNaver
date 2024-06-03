@@ -355,10 +355,11 @@ html,body{height: 100%;}
 .sec02 .title .tit-ani span:nth-child(2) {background: url(../images/sec_02_title02.png) no-repeat top right; width: 200px;}
 .sec02 .title.aos-animate .tit-ani span.ani-txt {animation: wi3 1.4s ease both;}
 
+/* 애니 
 @keyframes wi3{
     0% {width: 0px}
     100% {width: 440px;}
-}
+} */
 .sec02 .title > span {display: block; margin-top: 30px; font-size: 20px; font-weight: 300; color: #a1a1a1;}
 
 .sec02-cont01 {text-align: center; margin-top: 60px;}
@@ -429,12 +430,13 @@ html,body{height: 100%;}
     transition: height 0.3s 0.3s ease-in;
 }
 
+/* 애니
 .sec02-cont03 .text.aos-animate span {
     height: 115%;
 }
 .sec02-cont03 .text.aos-animate b {
     color: transparent;
-}
+} */
 
 .sec02-cont03_item {width: 620px; display: flex; margin: 64px auto 0;}
 .sec02-cont03_item li {width: 310px;}
@@ -523,9 +525,10 @@ html,body{height: 100%;}
     transition: height 0.3s 0.3s ease-in;
 }
 
+/* 애니 
 .sec03-cont01 .text.aos-animate span {
     height: 0;
-}
+} */
 
 .sec03-cont01 .orage-txt {margin-bottom: 8px;}
 
@@ -556,15 +559,17 @@ html,body{height: 100%;}
     transition: height 0.3s 0.3s ease-in;
 }
 
+/* 애니
 .sec03-cont02 .text.aos-animate span {
     height: 100%;
 }
 .sec03-cont02 .text.aos-animate b {
     color: transparent;
-}
+} */
 
 .sec03-cont02 .countNum { position: relative; text-align: center; padding-top: 54px; transition: background 0.3s 0.6s ease-in;}
 .sec03-cont02 .countNum p {position: relative; z-index: 1; font-size: 24px; font-weight: 300; color: #fff;}
+.sec03-cont02 .countNum p b {display: inline-block; position: relative; top: -1px; margin-right: 8px; font-size: 24px; font-weight: 300; color: #fff;}
 .sec03-cont02 .countNum p span {display: inline-block; font-size: 36px; font-weight: 300; color: #fff;}
 .sec03-cont02 .countNum > span {display: inline-block; margin-top: 32px; font-size: 20px; color: #a1a1a1; font-weight: 300;}
 .sec03-cont02 .countNum p span.counter-value {width: 44px;}
@@ -727,7 +732,8 @@ z-index: 3;}
 .sec06 .inner .inputarea div:first-child {margin-bottom: 20px;}
 .sec06 .inner .inputarea span{display: inline-block; vertical-align: middle;}
 .sec06 .inner .inputarea span label{font-size: 27px; color:#000; font-weight: 700;}
-.sec06 .inner .inputarea span input{padding: 15px;border: 2px solid #ccc;font-size: 22px;vertical-align: middle; border-radius: 10px; color: #ccc;}
+.sec06 .inner .inputarea span input{padding: 15px;border: 2px solid #ccc;font-size: 22px;vertical-align: middle; border-radius: 10px; color: #222;}
+.sec06 .inner .inputarea span input::placeholder {color: #ccc;}
 .sec06 .inner .inputarea span.in2 input{width: 224px;}
 .sec06 .inner .inputarea span.in4 input{width: 260px;}
 .sec06 .inner .inputarea span.in2{margin:0 24px 0 14px;}
