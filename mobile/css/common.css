@@ -355,11 +355,11 @@ html,body{height: 100%;}
 .sec02 .title .tit-ani span:nth-child(2) {background: url(../images/sec_02_title02.png) no-repeat top right; width: 200px;}
 .sec02 .title.aos-animate .tit-ani span.ani-txt {animation: wi3 1.4s ease both;}
 
-/* 애니 
+/* 애니  */
 @keyframes wi3{
     0% {width: 0px}
     100% {width: 440px;}
-} */
+}
 .sec02 .title > span {display: block; margin-top: 30px; font-size: 20px; font-weight: 300; color: #a1a1a1;}
 
 .sec02-cont01 {text-align: center; margin-top: 60px;}
@@ -516,7 +516,7 @@ html,body{height: 100%;}
 .sec03-cont01 .text b {position: relative; color: #ff7200; font-weight: 300;}
 .sec03-cont01 .text span {
     position: absolute;
-    top: -5px;
+    top: -4px;
     left: 0;
     height: 115%;
     transform-origin: 0 100%;
