@@ -384,10 +384,10 @@ html,body{height: 100%;}
     transition: height 0.3s 0.3s ease-in;
 }
 
-/* 애니
+
 .sec02-cont02 .text.aos-animate span {
     height: 0;
-} */
+}
 
 .sec02-cont02 .sec02-cont02_item {
     width: 648px;
@@ -421,7 +421,7 @@ html,body{height: 100%;}
 .sec02-cont03 .text b {position: relative; color: #fff; font-size: 32px; font-weight: 300; transition: color 0s 0.6s ease;}
 .sec02-cont03 .text span {
     position: absolute;
-    top: -5px;
+    top: -4px;
     left: 0;
     height: 0%;
     transform-origin: 0 100%;
@@ -435,7 +435,7 @@ html,body{height: 100%;}
 .sec02-cont03 .text.aos-animate span {
     height: 115%;
 }
-/* 애니
+/* 
 .sec02-cont03 .text.aos-animate b {
     color: transparent;
 } */
@@ -527,10 +527,10 @@ html,body{height: 100%;}
     transition: height 0.3s 0.3s ease-in;
 }
 
-/* 애니 
+
 .sec03-cont01 .text.aos-animate span {
     height: 0;
-} */
+}
 
 .sec03-cont01 .orage-txt {margin-bottom: 8px;}
 
@@ -565,7 +565,7 @@ html,body{height: 100%;}
 .sec03-cont02 .text.aos-animate span {
     height: 100%;
 }
-/* 애니
+/* 
 .sec03-cont02 .text.aos-animate b {
     color: transparent;
 } */
