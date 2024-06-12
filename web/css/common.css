@@ -271,13 +271,13 @@ html,body{height: 100%;}
 .sec02 .title .tit-ani {padding-top: 145px; width: 950px; margin: 0 auto; text-align: center;}
 .sec02 .title .tit-ani p {font-size: 46px; font-weight: 500; align-items:center;}
 .sec02 .title .tit-ani p:nth-child(2) {margin-top: 8px; margin-left: 12px;  letter-spacing: -0.02rem;}
-.sec02 .title .tit-ani p i {display: inline-block; position: relative; width: 320px; height: 64px; background: url(../images/sec_02_tit01.png) no-repeat; background-position: -320px 0;}
+.sec02 .title .tit-ani p i {display: inline-block; position: relative; width: 320px; height: 64px; background: url(../images/sec_02_tit01.png) no-repeat; background-position: 320px 0;}
 .sec02 .title .tit-ani p > span {font-weight: 500; letter-spacing: -0.02rem;}
 
 .sec02 .title .tit-ani.aos-animate p i {animation: wi1 1s ease both;}
 
 @keyframes wi1{
-    0% {background-position: -320px 0;}
+    0% {background-position: 320px 0;}
     100% {background-position: 0 0;}
 }
 
