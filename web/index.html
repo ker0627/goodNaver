@@ -96,7 +96,8 @@
 					</ul>
 				</div>
 				<div class="bottom-txt"
-				data-aos
+					data-aos
+					data-aos-offset="100"
 					data-aos-delay="100" 
 					data-aos-once="true">
 					<div class="tit-ani GyeonggiTitle"
@@ -187,7 +188,7 @@
 						</div>
 					</li>
 					<li
-					data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">
+					data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
 						<div class="blind">
 							<p>또한, 보호 과정 속에서
 								수많은 사회의 편견들로 상처받고
@@ -197,7 +198,7 @@
 						</div>
 					</li>
 					<li
-					data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">
+					data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
 						<div class="blind">
 							<p>자립 과정에서 겪는
 								계속되는 좌절과 어려움은
@@ -257,22 +258,13 @@
 				
 				<div class="bottom-txt GyeonggiTitle"
 				data-aos
+				data-aos-offset="100"
 				data-aos-delay="100" 
 				data-aos-once="true">
 					<div>
-						<p>연속성 있고 체계적인</p>
-						<b class="tit-item tit-item1">
-							<span>
-								<span class="blind">심리,정서적 지원</span>
-							</span>
-						</b>
-						<p>과</p>
-						<b class="tit-item tit-item2">
-							<span>
-								<span class="blind">사회적 지지체계</span>
-							</span>
-						</b>
-						<p>가 필요합니다.</p>
+						<p class="blind">연속성 있고 체계적인 심리,정서적 지원 과 사회적 지지체계 가 필요합니다.</p>
+						<b class="tit-item tit-item1"></b>
+						<b class="tit-item tit-item2"></b>
 					</div>
 					
 				</div>
@@ -287,7 +279,7 @@
 					data-aos="" 
 					data-aos-delay="100" 
 					data-aos-once="true">
-						<p class="fixd"><span>자립준비청년들의</span><i><b class="blind">온전한 자립 보장</b></i><span>을 위한</span></p>
+						<p class="fixd"><span>자립준비청년들의</span><i><b class="blind">온전한 자립 보장</b></i><span>을 위해</span></p>
 						<p>정책 개선을 촉구합니다! </p>
 					</div>
 				</div>
@@ -545,8 +537,13 @@
 
 		$(function () {
 			$('.sec06 .cont ul li').click(function () {
-				$(this).addClass('active');
-				$(this).next().addClass('defult');
+				if($(this).hasClass('defult')){
+					$(this).addClass('active');
+					$(this).next().addClass('defult');
+				}else {
+					alert("순서대로 진행해 주세요.");
+				}
+				
 			})
 
 			// const s4 = document.querySelector('.sec04');

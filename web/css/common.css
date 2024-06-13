@@ -211,7 +211,8 @@ html,body{height: 100%;}
 .tit-box p span {color: #ffd55b;}
 	
 /* content 01 */
-.sec01 .logo { position: absolute; top: 32px; right: 23px; z-index: 1; width: 212px; height: 40px;}
+.sec01 .logo { position: absolute; top: 32px; right: 23px; z-index: 9; width: 212px; height: 40px;}
+.sec01 .logo a {display: block; width: 100%; height: 40px;}
 .sec01 {height: 1614px; background: url(../images/sec_01_bg.png) no-repeat top center; background-size: cover;}
 
 /* .sec01::after{content: ''; display: block; width: 100%; height: 1614px; position: absolute; top: 0; background: url(../images/sec_01_bgv.png) no-repeat top center; opacity: 0.6;} */
@@ -271,13 +272,13 @@ html,body{height: 100%;}
 .sec02 .title .tit-ani {padding-top: 145px; width: 950px; margin: 0 auto; text-align: center;}
 .sec02 .title .tit-ani p {font-size: 46px; font-weight: 500; align-items:center;}
 .sec02 .title .tit-ani p:nth-child(2) {margin-top: 8px; margin-left: 12px;  letter-spacing: -0.02rem;}
-.sec02 .title .tit-ani p i {display: inline-block; position: relative; width: 320px; height: 64px; background: url(../images/sec_02_tit01.png) no-repeat; background-position: 320px 0;}
+.sec02 .title .tit-ani p i {display: inline-block; position: relative; width: 320px; height: 64px; background: url(../images/sec_02_tit01.png) no-repeat; background-position: -320px 0;}
 .sec02 .title .tit-ani p > span {font-weight: 500; letter-spacing: -0.02rem;}
 
 .sec02 .title .tit-ani.aos-animate p i {animation: wi1 1s ease both;}
 
 @keyframes wi1{
-    0% {background-position: 320px 0;}
+    0% {background-position: -320px 0;}
     100% {background-position: 0 0;}
 }
 
@@ -314,7 +315,7 @@ html,body{height: 100%;}
     height: 49px;
     transform-origin: 0 100%;
     overflow: hidden;
-    transition: height 1s ease-in;
+    transition: height 0.6s ease-in;
     background: url(../images/sec_02_txt_ani01.png) no-repeat;
 }
 
@@ -323,7 +324,7 @@ html,body{height: 100%;}
     left: 367px;
     width: 526px;
     height: 50px;
-    transition: height 1s 1s ease-in;
+    transition: height 0.6s 0.6s ease-in;
     background: url(../images/sec_02_txt_ani02.png) no-repeat;
 }
 
@@ -350,8 +351,8 @@ html,body{height: 100%;}
 .sec03  .graf-cont > .graf-cont01 .graf {width: 241px; height: 241px; top: 56px; left: 107px;}
 .sec03  .graf-cont > .graf-cont01 .graf .img {width: 144px; height: 241px; background: url(../images/sec_03_cont_grap01.png) no-repeat;}
 
-.sec03  .graf-cont > .graf-cont02 .graf {width: 241px; height: 241px; top: 56px; left: 94px;}
-.sec03  .graf-cont > .graf-cont02 .graf .img {width: 123px; height: 241px; background: url(../images/sec_03_cont_grap02.png) no-repeat;}
+.sec03  .graf-cont > .graf-cont02 .graf {width: 240px; height: 240px; top: 57px; left: 91px;}
+.sec03  .graf-cont > .graf-cont02 .graf .img {width: 240px; height: 240px; background: url(../images/sec_03_cont_grap02.png) no-repeat;}
 
 .sec03  .graf-cont > div .counter span {font-size: 68px; text-shadow: 5px 5px #4c6112; color: #fff;}
 .sec03  .graf-cont > div .counter {font-size: 32px; text-shadow: 3px 4px #4c6112; color: #fff; position: absolute; top: 100px; left: 100px; top: 150px; left: 202px;}
@@ -359,7 +360,7 @@ html,body{height: 100%;}
 .sec03  .graf-cont.aos-animate > div .graf {transform: rotate(360deg);}
 
 .sec03  .graf-cont > .graf-cont02 .counter span {text-shadow: 5px 5px #1d7e86;}
-.sec03  .graf-cont > .graf-cont02 .counter {text-shadow: 3px 4px #1d7e86; left: 220px;}
+.sec03  .graf-cont > .graf-cont02 .counter {text-shadow: 3px 4px #1d7e86; left: 239px;}
 
 .sec03 .img-cont01 {margin: 30px auto 0; width: 897px; height: 396px; background: url(../images/sec_03_img01.png) no-repeat;}
 .sec03 .img-cont02 {position: relative;  width: 900px; margin: 0 auto;}
@@ -371,7 +372,7 @@ html,body{height: 100%;}
  
 
 /* content 04 */
-.sec04 {position: relative; height: 2023px; background: url(../images/sec_04_bg.jpg);}
+.sec04 {position: relative; height: 1918px; background: url(../images/sec_04_bg.jpg);}
 /* .sec04::after{content: ''; display: block; width: 100%; height: 2023px; position: absolute; bottom: 0; background: url(../images/sec_04_bgv.jpg) no-repeat top center; opacity: 0.6;} */
 
 .sec04 .bg {position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 2023px; background: url(../images/sec_04_bg_item.jpg) no-repeat top center; transition: width 0.3s ease;}
@@ -409,29 +410,25 @@ html,body{height: 100%;}
     100% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
 } 
 
-.sec05 .title {display: flex; width: 806px; margin: 0 auto; align-items: center;}
+.sec05 .title {display: flex; width: 808px; margin: 0 auto; align-items: center;}
 .sec05 .title01 {padding-top: 275px; align-items: self-start;}
 .sec05 .title02 {width: 740px; padding-top: 6px;}
 .sec05 .title p {font-size: 46px; font-weight: 500; color: #30301f; letter-spacing: -0.02rem;}
 .sec05 .title b {display: block; width: 0; height: 55px;}
-.sec05 .title b.tit-item1 {background: url(../images/sec_05_tit01.png) no-repeat; margin: 0 0 0 16px; transition: width 1s ease;}
+.sec05 .title b.tit-item1 {background: url(../images/sec_05_tit01.png) no-repeat; margin: 0 3px 0 16px; transition: width 1s ease;}
 .sec05 .title b.tit-item2 {background: url(../images/sec_05_tit02.png) no-repeat; margin-right: -1px;  transition: width 1s 1s ease;}
 .sec05 div.aos-animate .title b.tit-item1 {width: 204px;}
 .sec05 div.aos-animate .title b.tit-item2 {width: 439px;}
 
 .sec05 .bottom-txt {position: absolute; top: 1126px; left: 50%; transform: translateX(-50%); width: 1284px; height: 117px; background: url(../images/sec_05_txt_bg.png) no-repeat;}
-.sec05 .bottom-txt div {width: 100%; display: flex; margin: 37px 0 0 71px;}
-.sec05 .bottom-txt p {font-size: 40px; font-weight: 600; color: #1a325a; letter-spacing: -0.02rem;}
-.sec05 .bottom-txt b {display: block; height: 38px; position: relative;}
-.sec05 .bottom-txt b > span {position: absolute; left: 50%; transform: translateX(-50%); height: 46px;}
+.sec05 .bottom-txt div {width: 100%; position: relative;}
+.sec05 .bottom-txt b {display: block; height: 50px; position: absolute; background-color: #f99269;}
 
-.sec05 .bottom-txt b.tit-item1 {width: 266px;  margin-left: 16px; }
-.sec05 .bottom-txt b.tit-item1 > span {display: block; width: 0; background: url(../images/sec_05_txt01.png) no-repeat top center; transition: width 1s ease;}
-.sec05 .bottom-txt b.tit-item2 {display: block;  width: 254px; margin-left: 13px; }
-.sec05 .bottom-txt b.tit-item2 > span {width: 0; background: url(../images/sec_05_txt02.png) no-repeat top center; transition: width 1s 1s ease;}
+.sec05 .bottom-txt b.tit-item1 {width: 267px; left: 425px; top: 36px;}
+.sec05 .bottom-txt b.tit-item2 {width: 255px; left: 739px; top: 36px;}
 
-.sec05 .bottom-txt.aos-animate b.tit-item1 > span {width: 266px;}
-.sec05 .bottom-txt.aos-animate b.tit-item2 > span {width: 254px;}
+.sec05 .bottom-txt.aos-animate b.tit-item1 {animation: op 1s linear both;}
+.sec05 .bottom-txt.aos-animate b.tit-item2 {animation: op 1s 1s linear both;}
 
 
 /* content 06 */
@@ -454,7 +451,7 @@ html,body{height: 100%;}
 
 .sec06 .cont ul {width: 1400px; height: 530px;  position: relative; margin: 64px auto 0; display: flex; justify-content: space-between; background: url(../images/sec_06_cont.png) no-repeat;}
 
-.sec06 .cont ul li {width: 682px; position: relative;}
+.sec06 .cont ul li {width: 682px; position: relative; cursor: pointer;}
 .sec06 .cont ul li i {display: block; position: absolute; width: 49px; height: 49px; background: url(../images/sec_06_click_on.png) no-repeat; top: 56px; left: 50px; opacity: 0;}
 .sec06 .cont ul li.defult span {display: block; position: absolute; width: 44px; height: 44px; background: url(../images/sec_06_click_icon.png) no-repeat; top: 100px; left: 56px; animation:zooms2 0.5s ease-in-out infinite alternate;}
 @keyframes zooms2{
@@ -480,6 +477,7 @@ html,body{height: 100%;}
 .sec07 .inner .inputarea span{display: inline-block; vertical-align: middle;}
 .sec07 .inner .inputarea span label{font-size: 22px; color:#000; font-weight: 800;}
 .sec07 .inner .inputarea span input{padding: 15px; border: 2px solid #cccccc;font-size: 22px; vertical-align: middle; border-radius: 10px;}
+.sec07 .inner .inputarea span input::placeholder {color: #ccc;}
 .sec07 .inner .inputarea span.in2 input{width: 250px;}
 .sec07 .inner .inputarea span.in4 input{width: 320px;}
 .sec07 .inner .inputarea span.in2{margin:0 20px 0 22px;}
@@ -533,7 +531,7 @@ html,body{height: 100%;}
 .sec08 .title .tit-ani {width: 1120px; margin: 0 auto; text-align: center;}
 .sec08 .title .tit-ani p {font-size: 46px; font-weight: 500; justify-content: center;}
 .sec08 .title .tit-ani p:nth-child(2) {margin-top: 1px; margin-left: -10px;  letter-spacing: -0.02rem;}
-.sec08 .title .tit-ani p i {display: inline-block; margin-left: 13px; position: relative; width: 0; height: 64px; background: url(../images/sec_08_tit01.png) no-repeat;}
+.sec08 .title .tit-ani p i {display: inline-block; margin-right: 3px; margin-left: 13px; position: relative; width: 0; height: 64px; background: url(../images/sec_08_tit01.png) no-repeat;}
 .sec08 .title .tit-ani p > span {font-weight: 500; letter-spacing: -0.02rem;}
 
 .sec08 .title .tit-ani.aos-animate p i {animation: wi8 1s ease both;}
