@@ -225,7 +225,7 @@ html,body{height: 100%;}
 .sec01 .title {padding-top: 125px;}
 .sec01 .title .rund-txt {font-size: 22px; width: 330px; line-height: 49px; color: #fff; border-radius: 50px; background-color: #0aad81; text-align: center; margin: 0 auto; font-weight: 600; letter-spacing: -0.01rem;}
 
-.sec01 .tit-ani {position: relative; width: 460px; margin: 41px auto 0;}
+.sec01 .tit-ani {position: relative; width: 100%; text-align: center; margin: 41px auto 0;}
 .sec01 .tit-ani p {font-size: 95px; color: #555454; font-weight: 800; letter-spacing: 0;}
 .sec01 .tit-ani p b {font-size: 95px; color: #02af81; font-weight: 800; letter-spacing: 0;}
 .sec01 .tit-ani span{ position: absolute; display: block;
@@ -239,9 +239,9 @@ html,body{height: 100%;}
     background: url(../images/sec_01_tit.png) no-repeat;
 }
 
-.sec01 .tit-ani.aos-animate span {
+/* .sec01 .tit-ani.aos-animate span {
     height: 0;
-}
+} */
 
 .sec01 .title .sub-txt {font-size: 22px; font-weight: 600; text-align: center;}
 .sec01 .bottom-txt {position: absolute; top: 1069px; left: 59px;}
