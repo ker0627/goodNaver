@@ -238,9 +238,9 @@ html,body{height: 100%;}
     background: #b0e4f3 url(../images/sec_01_tit.png) no-repeat;
 }
 
-/* .sec01 .tit-ani.aos-animate span {
+.sec01 .tit-ani.aos-animate span {
     height: 0;
-} */
+}
 
 .sec01 .title .sub-txt {font-size: 22px; font-weight: 600; text-align: center;}
 .sec01 .bottom-txt {position: absolute; top: 1069px; left: 59px;}
