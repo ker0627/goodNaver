@@ -396,7 +396,7 @@ html,body{height: 100%;}
 /* .sec05::after{content: ''; display: block; width: 100%; height: 1454px; position: absolute; bottom: 0; background: url(../images/sec_05_bgv.jpg) no-repeat top center; opacity: 0.6;} */
 
 .sec05 .bg {position: absolute; width: 1748px; height: 817px; background: url(../images/sec_05_bg_item.png) no-repeat center left; top: 321px; left: -57px; clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
-.sec05 .bg.aos-animate {animation: wBg 2.6s ease both;}
+.sec05 .bg.aos-animate {animation: wBg 2.6s 1s ease both;}
 @keyframes wBg{
     0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
     100% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
