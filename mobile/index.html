@@ -562,13 +562,97 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-	<script src="https://watchers.gni.kr/resources/watchers/web/js/jquery.counterup.js"></script>
 	<script type="text/javascript">
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-WW44JQM');
+
+		/*!
+		* jquery.counterup.js 1.0
+		*
+		* Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
+		* Released under the GPL v2 License
+		*
+		* Date: Nov 26, 2013
+		*/
+		(function( $ ){
+		"use strict";
+
+		$.fn.counterUp = function( options ) {
+
+			// Defaults
+			var settings = $.extend({
+				'time': 400,
+				'delay': 10
+			}, options);
+
+			return this.each(function(){
+
+				// Store the object
+				var $this = $(this);
+				var $settings = settings;
+
+				var counterUpper = function() {
+					var nums = [];
+					var divisions = $settings.time / $settings.delay;
+					var num = $this.text();
+					var isComma = /[0-9]+,[0-9]+/.test(num);
+					num = num.replace(/,/g, '');
+					var isInt = /^[0-9]+$/.test(num);
+					var isFloat = /^[0-9]+\.[0-9]+$/.test(num);
+					var decimalPlaces = isFloat ? (num.split('.')[1] || []).length : 0;
+
+					// Generate list of incremental numbers to display
+					for (var i = divisions; i >= 1; i--) {
+
+						// Preserve as int if input was int
+						var newNum = parseInt(num / divisions * i);
+
+						// Preserve float if input was float
+						if (isFloat) {
+							newNum = parseFloat(num / divisions * i).toFixed(decimalPlaces);
+						}
+
+						// Preserve commas if input had commas
+						if (isComma) {
+							while (/(\d+)(\d{3})/.test(newNum.toString())) {
+								newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+							}
+						}
+
+						nums.unshift(newNum);
+					}
+
+					$this.data('counterup-nums', nums);
+					$this.text('0');
+
+					// Updates the number until we're done
+					var f = function() {
+						$this.text($this.data('counterup-nums').shift());
+						if ($this.data('counterup-nums').length) {
+							setTimeout($this.data('counterup-func'), $settings.delay);
+						} else {
+							delete $this.data('counterup-nums');
+							$this.data('counterup-nums', null);
+							$this.data('counterup-func', null);
+						}
+					};
+					$this.data('counterup-func', f);
+
+					// Start the count up
+					setTimeout($this.data('counterup-func'), $settings.delay);
+				};
+
+				// Perform counts when the element gets into view
+				$this.waypoint(counterUpper, { offset: '90%', triggerOnce: true });
+			});
+
+		};
+
+		})( jQuery );
+
 
 		$(function () {
 			$('.sec06 .cont ul li').click(function () {
@@ -582,8 +666,9 @@
 			})
 
 		});
-		$('.graf-cont01 .counter-value').counterUp({'time':700});
-		$('.graf-cont02 .counter-value').counterUp({'time':700});
+
+		$('.graf-cont01 .counter-value').counterUp({'time':1600});
+		$('.graf-cont02 .counter-value').counterUp({'time':1600});
 
 		var swiper = new Swiper(".mySwiper", {
 			grabCursor: true,
