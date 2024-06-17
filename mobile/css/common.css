@@ -409,13 +409,13 @@ html,body{height: 100%;}
 
 .sec05 .title01 div {display: flex; justify-content: center; align-items: center; margin-top: 14px;}
 .sec05 .title02 {display: flex;}
-.sec05 .title02 p {margin-left: -10px; position: relative; z-index: 1;}
+.sec05 .title02 p {position: relative; z-index: 1;}
 
 .sec05 .title b {display: block; width: 0; height: 37px;}
 .sec05 .title b.tit-item1 {background: url(../images/sec_05_tit01.png) no-repeat; margin: 0 3px 0 4px; transition: width 1s ease;}
-.sec05 .title b.tit-item2 {margin-left: -48px; height: 57px; background: url(../images/sec_05_tit02.png) no-repeat; margin-right: -1px;  transition: width 1s 1s ease;}
+.sec05 .title b.tit-item2 {margin-left: -48px; height: 57px; background: url(../images/sec_05_tit02.png) no-repeat;  transition: width 1s 1s ease;}
 .sec05 div.aos-animate .title b.tit-item1 {width: 178px;}
-.sec05 div.aos-animate .title b.tit-item2 {width: 381px;}
+.sec05 div.aos-animate .title b.tit-item2 {width: 364px;}
 
 .sec05 .bottom-txt {position: absolute; top: 1132px; left: 50%; transform: translateX(-50%); width: 700px; height: 155px; background: url(../images/sec_05_txt_bg.png) no-repeat;}
 .sec05 .bottom-txt div {width: 100%; position: relative;}
