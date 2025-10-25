@@ -24,12 +24,15 @@ button {cursor: pointer; outline: none; border: none; background: none;}
 
 .wrap .wrapper { width:100%; max-width: 1920px; margin: auto; position: relative; }
 .wrap section .inner{ width: 1136px; height: 100%; margin: auto; position: relative; z-index:2; }
+.pc {display: block;}
+.mo {display: none;}
 
 .swiper-button {cursor: pointer;}
 
+.banner {width: 128px; height: 192px; position: fixed; top: 120px; right: 50%;transform: translateX(698px); z-index: 999; background: url("../images/banner.png") no-repeat center center;}
+.banner:hover {background: url("../images/banner_hover.png") no-repeat center center;}
+
 .sec01 {height: 1000px; background: url("../images/sec-01-bg.png") no-repeat center center;}
-.sec01 .banner {width: 128px; height: 192px; position: fixed; top: 120px; right: 50%;transform: translateX(698px); z-index: 999; background: url("../images/banner.png") no-repeat center center;}
-.sec01 .banner:hover {background: url("../images/banner_hover.png") no-repeat center center;}
 .sec01 .logo {position: absolute; top: 64px; left: 0px; z-index: 9; width: 140px; height: 40px;}
 .sec01 .sec01-text {width: 566px; height: 424px; position: absolute; top: 104px; left: 50%; transform: translateX(-50%); background: url("../images/sec-01-text.png") no-repeat top center;}
 
@@ -59,6 +62,7 @@ button {cursor: pointer; outline: none; border: none; background: none;}
 .sec03 .swiper .swiper-pagination-bullet-active {border: none; background: #1952D9;}
 
 .sec03 .sec03-sub-card {margin-top: 40px;}
+.sec03 .sec03-sub-card img {width: 100%;}
 
 
 .sec04 {height: 1080px; padding: 120px 0 160px; background: url("../images/sec04-bg.png") no-repeat center center;}
@@ -103,19 +107,101 @@ button {cursor: pointer; outline: none; border: none; background: none;}
 .sec06 .tab-item .sns-list {display: flex; gap: 8px; position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%);}
 .sec06 .tab-item .sns-list button {display: block; width: 56px; height: 56px;}
 
+@media all and (max-width: 1391px) {
+    .banner {right: 16px; transform: translateX(0)}
+}
 
 /** 모바일 **/
-@media all and (max-width: 721px) {
-    .wrap {min-width: 720;}
-    .wrap section .inner{ width: 640px; }
+@media all and (max-width: 1025px) {
+    .pc {display: none;}
+    .mo {display: block;}
+    .wrap {min-width: 320px;}
+    .wrap section .inner{ width: 88.9vw; }
 
-    .sec01 {height: 1440px; background: url("../images/mo/sec01-bg.png") no-repeat top center; background-size: cover;}
+    .banner {top: inherit; bottom: 0; right: 50%; transform: translateX(50%); width: 100%; height: 16.7vw; background: url("../images/mo/fixd-btn.png") no-repeat top center; background-size: cover;}
+    .banner:hover {background: url("../images/mo/fixd-btn.png") no-repeat top center; background-size: cover;}
 
-    .sec02 {display: none;}
-    .sec03 {display: none;}
-    .sec04 {display: none;}
-    .sec05 {display: none;}
-    .sec06 {display: none;}
+    .sec01 {height: 200vw; background: url("../images/mo/sec01-bg.png") no-repeat top center; background-size: cover;}
+    .sec01 .logo {width: 31.1vw; height: 8.9vw; top: 8.9vw; left: 50%; transform: translateX(-50%); }
+    .sec01 .sec01-text {width: 78.6vw; height: 65.6vw; top: 23.6vw; background: url("../images/mo/sec01-txt.png") no-repeat top center; background-size: contain;}
+
+
+    .sec02 {height: 255.8vw; padding: 13.3vw 0;}
+    .sec02 .sec02-tit {width: 79.0vw; height: 14.7vw; background: url("../images/mo/sec02-tit.png") no-repeat top center; background-size: contain;}
+    .sec02 .card {display: block;}
+    .sec02 .card01 {margin-top: 6.7vw;}
+    .sec02 .card02 {margin: 3.3vw 0 0;}
+    .sec02 .card li {width: 100%; height: 38.9vw;}
+    .sec02 .card li + li {margin-top: 3.3vw;}
+    .sec02 .card01 li:nth-child(1) {background: url("../images/mo/sec02-card01.png") no-repeat top center; background-size: contain;}
+    .sec02 .card01 li:nth-child(2) {background: url("../images/mo/sec02-card02.png") no-repeat top center; background-size: contain;}
+    .sec02 .card01 li:nth-child(3) {background: url("../images/mo/sec02-card03.png") no-repeat top center; background-size: contain;}
+    .sec02 .card02 li:nth-child(1) {background: url("../images/mo/sec02-card04.png") no-repeat top center; background-size: contain;}
+    .sec02 .card02 li:nth-child(2) {background: url("../images/mo/sec02-card05.png") no-repeat top center; background-size: contain;}
+
+
+    .sec03 {height: 221.7vw; padding: 13.3vw 0 7.8vw;}
+    .sec03 .sec03-tit {width: 54.9vw; height: 20.0vw; background: url("../images/mo/sec03-tit.png") no-repeat top center; margin: 0 auto; background-size: contain;}
+
+    .sec03 .swiper {margin-top: 6.7vw; padding-bottom: 5vw;}
+    .sec03 .swiper .swiper-slide {width: 88.9vw !important;}
+    .sec03 .swiper .swiper-slide img {width: 100%; height: auto;}
+    .sec03 .swiper .swiper-button {width: 11.1vw; height: 11.1vw; bottom: 5vw;}
+    .sec03 .swiper .button-prev {background: url("../images/mo/sec03-btn-prev.png") no-repeat center center; background-size: contain; right: 13.3vw;}
+    .sec03 .swiper .button-next {background: url("../images/mo/sec03-btn-next.png") no-repeat center center; background-size: contain; right: 0;}
+
+    .sec03 .swiper .swiper-pagination-bullet {width: 2.2vw; height: 2.2vw; background: #fff; opacity: 1; border: 0.3vw solid #AAB2C5; border-radius: 2.2vw; margin: 0 0.6vw;}
+    .sec03 .swiper .swiper-pagination-bullet-active {border: none; background: #1952D9;}
+
+    .sec03 .sec03-sub-swiper-cont {width: calc(100% + 11.1vw); padding: 0 5.6vw; margin-left: -5.6vw; margin-right: -5.6vw; overflow: hidden;}
+    .sec03 .sec03-sub-swiper {padding-bottom: 0; width: 66.7vw !important; overflow: visible;}
+    .sec03 .sec03-sub-swiper .swiper-slide {width: 66.7vw !important;}
+
+    .sec04 {height: 221.7vw; padding: 8.9vw 0 13.3vw; background: url("../images/mo/sec04-bg.png") no-repeat top center; background-size: cover;}
+    .sec04 .inner {width: 95.6vw !important;}
+    .sec04 .sec04-tit {width: 91.5vw; height: 38.3vw; margin: auto; background: url("../images/mo/sec04-tit.png") no-repeat top center; background-size: contain;}
+
+    .sec04 .sec04-step {margin: 6.7vw auto 2.8vw; width: 73.3vw; display: flex; gap: 2.2vw;}
+    .sec04 .sec04-step li {width:16.7vw; height: 21.1vw; cursor: pointer;}
+    .sec04 .sec04-step li:nth-child(1) {background: url("../images/mo/sec04-step01.png") no-repeat top center; background-size: cover;}
+    .sec04 .sec04-step li:nth-child(2) {background: url("../images/mo/sec04-step02.png") no-repeat top center; background-size: cover;}
+    .sec04 .sec04-step li:nth-child(3) {background: url("../images/mo/sec04-step03.png") no-repeat top center; background-size: cover;}
+    .sec04 .sec04-step li:nth-child(4) {background: url("../images/mo/sec04-step04.png") no-repeat top center; background-size: cover;}
+
+    .sec04 .sec04-step li.on:nth-child(1) {background: url("../images/mo/sec04-step01-on.png") no-repeat top center; background-size: cover;}
+    .sec04 .sec04-step li.on:nth-child(2) {background: url("../images/mo/sec04-step02-on.png") no-repeat top center; background-size: cover;}
+    .sec04 .sec04-step li.on:nth-child(3) {background: url("../images/mo/sec04-step03-on.png") no-repeat top center; background-size: cover;}
+    .sec04 .sec04-step li.on:nth-child(4) {background: url("../images/mo/sec04-step04-on.png") no-repeat top center; background-size: cover;}
+
+    .sec04 .swiper {}
+    .sec04 .swiper .swiper-slide {text-align: center;}
+    .sec04 .swiper .swiper-slide img {width: 100%; height: auto;}
+    .sec04 .swiper .swiper-pagination {width: 100%; bottom: 5.6vw; right: initial;}
+    .sec04 .swiper .swiper-pagination-bullet {width: 2.2vw; height: 2.2vw; background: #fff; opacity: 1; border: 0.3vw solid #AAB2C5; border-radius: 2.2vw; margin: 0 0.6vw;}
+    .sec04 .swiper .swiper-pagination-bullet-active {border: none; background: #1952D9;}
+
+    .sec04 .swiper-button {width: 11.1vw; height: 11.1vw; position: absolute; top: 133.5vw; z-index: 99;}
+    .sec04 .button-prev {background: url("../images/mo/sec03-btn-prev.png") no-repeat center center; left: 0; background-size: contain;}
+    .sec04 .button-next {background: url("../images/mo/sec03-btn-next.png") no-repeat center center; right: 0; background-size: contain;}
+
+
+    .sec05 {height: 112.8vw; padding: 13.3vw 0;}
+    .sec05 .sec05-text {width: 54.7vw; height: 86.1vw; background: url("../images/mo/sec05-text.png") no-repeat top center; background-size: contain;}
+
+
+    .sec06 {height: 211.1vw; padding: 13.3vw 0 31vw;}
+    .sec06 .tab-btn {display: flex; width: 72.8vw; height: 13.3vw; margin: 0 auto 8.3vw; padding: 1.1vw; background: url("../images/mo/sec06-tab.png") no-repeat top center; background-size: cover;}
+    .sec06 .tab-btn button {display: block; width: 35.3vw; height: 11.1vw;}
+    .sec06 .tab-btn button.on:nth-child(1) {background: url("../images/mo/sec06-tab01-on.png") no-repeat top center; background-size: cover;}
+    .sec06 .tab-btn button.on:nth-child(2) {background: url("../images/mo/sec06-tab02-on.png") no-repeat top center; background-size: cover;}
+
+    .sec06 .tab-item > li img {width: 100%; height: auto;}
+
+    .sec06 .tab-item li.tab-item01 a {width: 88.9vw; height: 16.7vw; position: absolute; bottom: 2.8vw; left: 50%; transform: translateX(-50%);}
+
+    .sec06 .tab-item .sns-list {display: flex; gap: 2.2vw; position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%);}
+    .sec06 .tab-item .sns-list button {display: block; width: 16.7vw; height: 16.7vw;}
+
 }
 
 

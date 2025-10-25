@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=720">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta property="og:image" content="">
     <meta property="og:title" content="">
     <meta property="og:site_name" content="">
@@ -21,11 +21,12 @@
 <body>
     <div class="wrap">
         <div class="wrapper">
+            <a href="https://secure.donus.org/makeawish/pay/step1_direct?dontype=wishjourney" target="_blank" class="banner">
+                <span class="blind">소원여행 함께하기</span>
+            </a>
             <section class="sec01">
                 <div class="inner">
-                    <a href="https://secure.donus.org/makeawish/pay/step1_direct?dontype=wishjourney" target="_blank" class="banner">
-                        <span class="blind">소원여행 함께하기</span>
-                    </a>
+
                     <h1 class="logo">
                         <a href="/"></a>
                     </h1>
@@ -82,13 +83,16 @@
                     <div class="swiper sec03-swiper">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <img src="./images/sec03-img01.png" alt="">
+                                <img src="./images/sec03-img01.png" class="pc" alt="">
+                                <img src="./images/mo/sec03-img01.png" class="mo" alt="">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./images/sec03-img02.png" alt="">
+                                <img src="./images/sec03-img02.png" class="pc" alt="">
+                                <img src="./images/mo/sec03-img02.png" class="mo" alt="">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./images/sec03-img03.png" alt="">
+                                <img src="./images/sec03-img03.png" class="pc" alt="">
+                                <img src="./images/mo/sec03-img03.png" class="mo" alt="">
                             </li>
                         </ul>
 
@@ -96,9 +100,34 @@
                         <div class="button-next swiper-button"></div>
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div class="sec03-sub-card">
+                    <div class="sec03-sub-card pc">
                         <img src="./images/sec03-sub-img01.png" alt="">
                     </div>
+                    <div class=" sec03-sub-swiper-cont">
+                        <div  class="swiper sec03-sub-swiper mo">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img src="./images/mo/sec03-sub-card-img01.png" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./images/mo/sec03-sub-card-img02.png" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./images/mo/sec03-sub-card-img03.png" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./images/mo/sec03-sub-card-img01.png" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./images/mo/sec03-sub-card-img02.png" alt="">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./images/mo/sec03-sub-card-img03.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -116,16 +145,20 @@
                     <div class="swiper sec04-swiper">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <img src="./images/sec04-img01.png" alt="">
+                                <img src="./images/sec04-img01.png" alt="" class="pc">
+                                <img src="./images/mo/sec04-img01.png" alt="" class="mo">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./images/sec04-img02.png" alt="">
+                                <img src="./images/sec04-img02.png" alt="" class="pc">
+                                <img src="./images/mo/sec04-img02.png" alt="" class="mo">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./images/sec04-img03.png" alt="">
+                                <img src="./images/sec04-img03.png" alt="" class="pc">
+                                <img src="./images/mo/sec04-img03.png" alt="" class="mo">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./images/sec04-img04.png" alt="">
+                                <img src="./images/sec04-img04.png" alt="" class="pc">
+                                <img src="./images/mo/sec04-img04.png" alt="" class="mo">
                             </li>
                         </ul>
                         <div class="swiper-pagination"></div>
@@ -156,13 +189,15 @@
                     </div>
                     <ul class="tab-item">
                         <li class="tab-item01 on">
-                            <img src="./images/sec06-tab-item01.png" alt="">
+                            <img src="./images/sec06-tab-item01.png" alt="" class="pc">
+                            <img src="./images/mo/sec06-tab-item01.png" alt="" class="mo">
                             <a href="https://secure.donus.org/makeawish/pay/step1_direct?dontype=wishjourney" target="_blank">
                                 <span class="blind">소원여행 함께하기</span>
                             </a>
                         </li>
                         <li class="tab-item02">
-                            <img src="./images/sec06-tab-item02.png" alt="">
+                            <img src="./images/sec06-tab-item02.png" alt="" class="pc">
+                            <img src="./images/mo/sec06-tab-item02.png" alt="" class="mo">
                             <ul class="sns-list">
                                 <li>
                                     <button type="button">
@@ -209,6 +244,16 @@
                     prevEl: ".button-prev",
                 },
             });
+
+            var swiperSubCard = new Swiper(".sec03-sub-swiper", {
+                speed: 600,
+                autoplay: {speed: 600},
+                allowTouchMove: true,
+                loop: true,
+                slidesPerView: "auto",
+                centeredSlides: true,
+            });
+            swiperSubCard.slideTo(2);
 
             var sec04Swiper = new Swiper(".sec04-swiper", {
                 speed: 600,
