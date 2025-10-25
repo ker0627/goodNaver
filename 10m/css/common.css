@@ -105,11 +105,11 @@ button {cursor: pointer; outline: none; border: none; background: none;}
 
 
 /** 모바일 **/
-@media all and (max-width: 1025px) {
-    .wrap {min-width: 76rem;}
-    .wrap section .inner{ width: 64rem; }
+@media all and (max-width: 721px) {
+    .wrap {min-width: 720;}
+    .wrap section .inner{ width: 640px; }
 
-    .sec01 {height: 144rem; background: url("../images/mo/sec01-bg.png") no-repeat top center; background-size: cover;}
+    .sec01 {height: 1440px; background: url("../images/mo/sec01-bg.png") no-repeat top center; background-size: cover;}
 
     .sec02 {display: none;}
     .sec03 {display: none;}
