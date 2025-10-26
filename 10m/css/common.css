@@ -25,6 +25,7 @@ button {cursor: pointer; outline: none; border: none; background: none;}
 .wrap .wrapper { width:100%; max-width: 1920px; margin: auto; position: relative; }
 .wrap section .inner{ width: 1136px; height: 100%; margin: auto; position: relative; z-index:2; }
 .pc {display: block;}
+img.pc {display: inline;}
 .mo {display: none;}
 
 .swiper-button {cursor: pointer;}
@@ -114,7 +115,9 @@ button {cursor: pointer; outline: none; border: none; background: none;}
 /** 모바일 **/
 @media all and (max-width: 1025px) {
     .pc {display: none;}
+    img.pc {display: none;}
     .mo {display: block;}
+    img.mo {display: inline;}
     .wrap {min-width: 320px;}
     .wrap section .inner{ width: 88.9vw; }
 
