@@ -35,7 +35,8 @@ img.pc {display: inline;}
 
 .sec01 {height: 1000px; background: url("../images/sec-01-bg.png") no-repeat center center;}
 .sec01 .logo {position: absolute; top: 64px; left: 0px; z-index: 9; width: 140px; height: 40px;}
-.sec01 .sec01-text {width: 566px; height: 424px; position: absolute; top: 104px; left: 50%; transform: translateX(-50%); background: url("../images/sec-01-text.png") no-repeat top center;}
+.sec01 .logo a {display: block; width: 100%; height: 100%;}
+.sec01 .sec01-text {width: 566px; height: 458px; position: absolute; top: 104px; left: 50%; transform: translateX(-50%); background: url("../images/sec-01-text.png") no-repeat top center;}
 
 .sec02 {height: 1028px; padding: 120px 0; background: #333F72;}
 .sec02 .sec02-tit {width:498px; height: 92px; margin: auto; background: url("../images/sec02-tit.png") no-repeat top center;}
@@ -126,7 +127,7 @@ img.pc {display: inline;}
 
     .sec01 {height: 200vw; background: url("../images/mo/sec01-bg.png") no-repeat top center; background-size: cover;}
     .sec01 .logo {width: 31.1vw; height: 8.9vw; top: 8.9vw; left: 50%; transform: translateX(-50%); }
-    .sec01 .sec01-text {width: 78.6vw; height: 65.6vw; top: 23.6vw; background: url("../images/mo/sec01-txt.png") no-repeat top center; background-size: contain;}
+    .sec01 .sec01-text {width: 78.6vw; height: 73.1vw; top: 23.6vw; background: url("../images/mo/sec01-txt.png") no-repeat top center; background-size: contain;}
 
 
     .sec02 {height: 255.8vw; padding: 13.3vw 0;}
