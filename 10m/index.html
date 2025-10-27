@@ -352,6 +352,7 @@
         // kakako
         // 2. 카카오톡 공유
         $('.sns-list li').eq(1).find('button').click(function() {
+            const currentUrl = 'https://ker0627.github.io';
             if (!Kakao.isInitialized()) {
                 alert('카카오톡 공유 기능을 사용할 수 없습니다.');
                 console.error('Kakao SDK가 초기화되지 않았습니다.');
