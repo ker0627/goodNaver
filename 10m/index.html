@@ -352,7 +352,7 @@
         // kakako
         // 2. 카카오톡 공유
         $('.sns-list li').eq(1).find('button').click(function() {
-            const currentUrl = 'https://ker0627.github.io';
+            const currentUrl =  url;
             if (!Kakao.isInitialized()) {
                 alert('카카오톡 공유 기능을 사용할 수 없습니다.');
                 console.error('Kakao SDK가 초기화되지 않았습니다.');
@@ -364,7 +364,7 @@
                 content: {
                     title: '간호사와 함께 떠나는 소원여행 캠페인',
                     description: '1만원의 여행티켓으로 아이들의 소원여행을 함께해 주세요.',
-                    imageUrl: window.location.origin + '/10m/images/banner_img.png', // 절대 경로로 수정
+                    imageUrl: 'https://ker0627.github.io/goodNaver/10m/images/kakao_img.png', // 절대 경로로 수정
                     link: {
                         mobileWebUrl: currentUrl,
                         webUrl: currentUrl,
@@ -379,13 +379,6 @@
                         },
                     },
                 ],
-                success: function(response) {
-                    console.log('카카오톡 공유 성공:', response);
-                },
-                fail: function(error) {
-                    console.error('카카오톡 공유 실패:', error);
-                    alert('카카오톡 공유에 실패했습니다.\n에러코드: ' + error.code + '\n에러메시지: ' + error.msg);
-                },
             });
         });
 
